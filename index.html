@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF_8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping cart</title>
+</head>
+
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <div class="panier"></div>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </header>
+    <div class="items">
+        <div class="item">
+            <h4>Iphone 14</h4>
+            <img src="https://w7.pngwing.com/pngs/450/269/png-transparent-space-gray-iphone-x-showing-ios-and-iphone-4-iphone-8-plus-iphone-5-iphone-x-iphone-apple-gadget-electronics-mobile-phone-thumbnail.png"
+                alt="" />
+            <button class="plus">Plus</button>
+            <p class="quantity">0</p>
+            <button class="min">min</button>
+            <p>Price <span class="price">1000</span></p>
+            <i class="fa-solid fa-heart "></i>
+            <button class="delete">Delete</button>
+        </div>
+        <div class="item">
+            <h4>Iphone 15</h4>
+            <img src="https://w7.pngwing.com/pngs/450/269/png-transparent-space-gray-iphone-x-showing-ios-and-iphone-4-iphone-8-plus-iphone-5-iphone-x-iphone-apple-gadget-electronics-mobile-phone-thumbnail.png"
+                alt="" />
+            <button class="plus" name="item_2">Plus</button>
+            <p class="quantity">0</p>
+            <button class="min">min</button>
+            <p>Price <span class="price">1500</span></p>
+            <i class="fa-solid fa-heart "></i>
+            <button class="delete">Delete</button>
+        </div>
+        <h1>Total Price : <span id="totalPrice">0</span></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
