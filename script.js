@@ -5,11 +5,12 @@ var totalPrice = document.getElementById("totalPrice");
 var quantity = document.querySelectorAll(".quantity");
 var btn_Delete = document.querySelectorAll(".delete");
 
-var icon = document.querySelector(".fa-heart");
-icon.addEventListener("click", function () {
-  icon.classList.toggle("active");
-});
-
+var icon = document.querySelectorAll(".fa-heart");
+for (let btn of icon) {
+  btn.addEventListener("click", function () {
+    btn.classList.toggle("active");
+  });
+}
 for (let btn of btn_plus) {
   btn.addEventListener("click", function () {
     let parent = btn.parentElement;
